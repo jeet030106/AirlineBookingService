@@ -12,6 +12,7 @@ const setUpAndStartServer = () => {
 
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`);
+        console.log(`DB SYNC is set to ${DB_SYNC}`);
     });
     app.use("/api", router);
 }
